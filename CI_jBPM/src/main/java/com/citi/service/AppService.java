@@ -1,10 +1,6 @@
 package com.citi.service;
 
-import java.util.logging.Logger;
 
-import org.slf4j.LoggerFactory;
-
-import com.citi.model.RequestData;
 import com.citi.util.Constant;
 import com.citi.util.HttpUtil;
 
@@ -51,10 +47,10 @@ public class AppService {
 	}
 	
 	
-	public String cdeDesicion() {
+	public String cdeDesicion(String str) {
 		System.out.println("=====cdeDesicion==start====" );
-//		String response = HttpUtil.httpGet(str);
-//		System.out.println(response);
+		String response = HttpUtil.httpGet(Constant.CREDITANALYSIS_CREDITDECISION);
+		System.out.println(response);
 		System.out.println("=====cdeDesicion==end====");
 		
 		return "";
@@ -88,6 +84,16 @@ public static String confirm(String str) {
 //	String response = HttpUtil.httpGet(str);
 //	System.out.println(response);
 	System.out.println("=====confirm==end====");
+	
+	return "";
+}
+
+
+public static String  creditBureau2(String str) {
+	System.out.println("========credit bureau===start==");
+	
+	System.out.println("========credit bureau===end==");
+	
 	
 	return "";
 }

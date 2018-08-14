@@ -45,13 +45,13 @@ public class ProcessMain {
 		param1.put("var3", Constant.CREDITBUREAU);
 		param1.put("var4", Constant.INETERNAL_ACCOUNTPULL);    
 		
+//		
+//		param1.put("var4", Constant.CREDITANALYSIS_CREDITDECISION);
+//		param1.put("var5", Constant.INETERNAL_ACCOUNTPULL);    
 		
-		param1.put("var4", Constant.CREDITANALYSIS_CREDITDECISION);
-		param1.put("var5", Constant.INETERNAL_ACCOUNTPULL);    
 		
 		
-		
-		ksession.startProcess("com.sample.bpmn.credit",param1);
+		ksession.startProcess("com.sample.bpmn.credit3",param1);
 //		ksession.startProcess("com.sample.test");
 		manager.disposeRuntimeEngine(engine);
 		
